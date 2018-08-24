@@ -1,0 +1,26 @@
+$(document).ready(function(){
+	
+	
+	
+	$(document).keypress(function(e) {
+		if (e.keyCode == 38) {
+			e.preventDefault();
+			
+			
+			
+			$("#myBox").stop().animate({  scrollTop: $("#myBox").offset().top}, 1000);
+			
+			
+		} else if (e.keyCode == 40) {
+			e.preventDefault();
+			
+			
+			
+			$("#myBox").stop().animate({ scrollTop: $("#myBox")[0].scrollHeight}, 1000);
+			
+		}
+	});
+	
+	
+	
+});
