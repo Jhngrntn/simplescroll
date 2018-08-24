@@ -1,0 +1,29 @@
+$(document).ready(function(){
+	
+	function scrollWin(x, y) {
+		window.scrollBy(x, y);
+	}
+	
+	$(document).keypress(function(e) {
+		if (e.keyCode == 38) {
+			e.preventDefault();
+			
+			
+			
+			scrollWin(0, -50);
+			
+			
+		} else if (e.keyCode == 40) {
+			e.preventDefault();
+			
+			
+			
+			scrollWin(0, 50);
+			
+		}
+	});
+	
+	
+	
+});
+
